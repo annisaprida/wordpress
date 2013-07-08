@@ -1,0 +1,15 @@
+/* 
+Theme Name:     My Responsive child
+Theme URI:      http://themeid.com/responsive-theme/ 
+Description:    Child theme for Responsive theme
+Author:         Annisa Prida R
+Author URI:     http://themeid.com
+Template:       responsive
+*/
+
+@import url("../responsive/style.css");
+
+body{
+  background-color: #52d9c6;
+  font-family:Arial;
+}
