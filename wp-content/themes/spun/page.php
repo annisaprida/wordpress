@@ -21,8 +21,11 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<?php comments_template( '', true ); ?>
+					<?php wpbeginner_numeric_posts_nav(); ?>
 
 				<?php endwhile; // end of the loop. ?>
+<?php wp_pagenavi(); ?>
+	
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->

@@ -68,9 +68,20 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
+				<?php
+global $wp_query;
 
+$big = 999999999; // need an unlikely integer
+
+echo paginate_links( array(
+	'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+	'format' => '?paged=%#%',
+	'current' => max( 1, get_query_var('paged') ),
+	'total' => $wp_query->max_num_pages
+) );
+?>
 				<?php spun_content_nav( 'nav-below' ); ?>
-
+				<?php wpbeginner_numeric_posts_nav(); ?>
 			<?php else : ?>
 
 				<?php get_template_part( 'no-results', 'archive' ); ?>

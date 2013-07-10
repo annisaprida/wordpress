@@ -34,6 +34,7 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
+				<?php wpbeginner_numeric_posts_nav(); ?>
 
 				<?php spun_content_nav( 'nav-below' ); ?>
 

@@ -25,8 +25,8 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 				<?php spun_content_nav( 'nav-below' ); ?>
-
-			<?php else : ?>
+<?php wp_pagenavi(); ?>
+		<?php else : ?>
 
 				<?php get_template_part( 'no-results', 'search' ); ?>
 

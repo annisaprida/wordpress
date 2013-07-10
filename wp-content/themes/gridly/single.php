@@ -19,11 +19,7 @@
                 
                 <div class="clear"></div>
 				<?php comments_template(); ?> 
-                </div>
-
-
-                
-                
+                </div>         
        </div>
        
 		<?php endwhile; endif; ?>

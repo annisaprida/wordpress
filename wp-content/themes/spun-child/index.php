@@ -37,18 +37,22 @@ get_header(); ?>
 						<?php print_excerpt(100); ?>
 					</div>
 				</div>
-				<?php endwhile; ?>
+				
+			
 
-				<?php spun_content_nav( 'nav-below' ); ?>
+				<?php endwhile; ?>
+	
+	
+		<?php spun_content_nav( 'nav-below' ); ?>
 
 			<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
 
 				<?php get_template_part( 'no-results', 'index' ); ?>
 
 			<?php endif; ?>
-
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
+<?php wpbeginner_numeric_posts_nav(); ?>
 <?php get_footer(); ?>

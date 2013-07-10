@@ -30,8 +30,8 @@ get_header(); ?>
 						comments_template( '', true );
 				?>
 
-			<?php endwhile; // end of the loop. ?>
 
+			<?php endwhile; // end of the loop. ?>
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
 
